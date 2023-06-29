@@ -1,0 +1,125 @@
+.hide {
+    display: none;
+}
+
+body {
+    background: #007bff;
+    background: -webkit-radial-gradient(circle, #007bff 0%, #cce0ff 50%, #ff7700 50%);
+    background: radial-gradient(circle, #007bff 0%, #cce0ff 50%, #ff7700 50%);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 25% auto;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    color: white;
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* 
+Darker Shade: #0056b3
+Dark Shade: #0066cc
+Lighter Shade: #339bff
+Light Shade: #66a3ff
+
+Lighter Shade 1: #80b2ff
+Lighter Shade 2: #99c0ff
+Lighter Shade 3: #b3d0ff
+Lighter Shade 4: #cce0ff
+*/
+.listComponentDiv{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.containerForTheGridContainerList{
+    margin: 5%;
+    width: 90%;
+}
+.gridContainerList {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-gap: .2rem;
+}
+
+.tableH2 {
+    font-weight: lighter;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: xx-large;
+    color: white;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.containerForTheTableContainer {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.tableContainer {
+    background-color: white;
+    max-height: 25rem; /* Adjust the height as needed */
+    max-width: 100%;
+    overflow-y: auto;
+    border: 1rem solid white;
+    border-radius: 1rem;
+}
+thead th {
+    font-weight: lighter;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #007bff;
+    color: white;
+    padding: 0.3rem;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    font-weight: lighter;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #339bff;
+    color: rgba(255, 255, 255, 0.824);
+}
+
+tbody tr:nth-child(odd) {
+    font-weight: lighter;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #007bff6c;
+}
+
+tbody td {
+    padding: 0.5rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.logOutBtn{
+    position: absolute;
+    top: 1%;
+}
+button:hover {
+    background-color: #0056b3;
+}
