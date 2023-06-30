@@ -21,19 +21,20 @@ export function App() {
         };
     }
 
-    const [isLoggedIn, setIsLoggedIn] = useState(false);
+    const [isLoggedIn, setIsLoggedIn] = useState(false); //Användaren är inte inloggad till en början
     const queryClient = useQueryClient();
 
     const seeIfLoggedIn = () => {
         if (
             localStorage.getItem("loggedIn") !== null 
         ) {
-            setIsLoggedIn(true);
+            setIsLoggedIn(true);    
         }
         else{
             setIsLoggedIn(false)
         }
     };
+    
     const loginQuery = useQuery({
         queryKey: ["allUsers"],
         queryFn: firebaseGetUsers,

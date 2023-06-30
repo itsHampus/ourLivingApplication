@@ -44,7 +44,6 @@ export function ListComponent() {
         Log out
       </button>
       <div className="containerForTheGridContainerList">
-
         <div className="gridContainerList">
           <h2 className="tableH2">List of a bunch of people</h2>
           <div className='tableContainer'>

@@ -1,8 +1,6 @@
-import { QueryClient, useQuery, useQueryClient } from "@tanstack/react-query";
-import { useRef, useState } from "react";
+import { useQuery, useQueryClient } from "@tanstack/react-query";
+import { useRef } from "react";
 import { firebaseGetUsers } from "./firebase";
-// import { checkIfUserExists } from "./login";
-
 
 function checkIfUserExists(username, password, allUsers) {
     let checkUser = false;
@@ -46,7 +44,7 @@ export function LoginFormComponent() {
     return (
         <>
 
-            <form action="" onSubmit={handleLogin}>
+            <form onSubmit={handleLogin}>
                 <label htmlFor="username">Username</label>
                 <input type="text"
                     name="username"
@@ -54,7 +52,7 @@ export function LoginFormComponent() {
                     required
                     ref={usernameRef}
                 />
-                <label htmlFor="password">password</label>
+                <label htmlFor="password">Password</label>
                 <input
                     type="password"
                     name="password"
